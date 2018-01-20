@@ -913,4 +913,37 @@ class TX extends BlockCypherResourceModel
         $this->next_outputs = $next_outputs;
         return $this;
     }
+
+    public function setBlockIndex($blockIndex)
+    {
+        $this->block_index = $blockIndex;
+        return $this;
+    }
+
+    public function getBlockIndex()
+    {
+        return $this->block_index;
+    }
+
+    public function setGasLimit($gasLimit)
+    {
+        $this->gas_limit = $gasLimit;
+        return $this;
+    }
+
+    public function getGasLimit()
+    {
+        return $this->gas_limit;
+    }
+
+    public function setGasPrice($gasPrice)
+    {
+        $this->gas_price = $gasPrice;
+        return $this;
+    }
+
+    public function getGasPrice()
+    {
+        return $this->gas_price;
+    }
 }
